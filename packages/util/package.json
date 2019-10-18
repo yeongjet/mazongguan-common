@@ -11,5 +11,8 @@
     "dependencies": {
         "lodash": "^4.17.15",
         "rxjs": "^6.5.3"
+    },
+    "publishConfig": {
+      "registry": "http://www.pastme.top"
     }
 }
