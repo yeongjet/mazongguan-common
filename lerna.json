@@ -5,8 +5,6 @@
   "version": "0.0.13",
   "command": {
     "publish": {
-      "verifyAccess": false,
-      "otp": "qwe321456",
       "registry": "http://www.pastme.top:4873"
     }
   }
