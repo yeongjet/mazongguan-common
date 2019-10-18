@@ -1,6 +1,6 @@
 {
     "name": "@mazongguan-common/util",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "license": "ISC",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
@@ -9,7 +9,7 @@
         "build": "tsc"
     },
     "publishConfig": {
-      "registry": "https://registry.npm.taobao.org"
+        "registry": "https://registry.npm.taobao.org"
     },
     "dependencies": {
         "lodash": "^4.17.15",
