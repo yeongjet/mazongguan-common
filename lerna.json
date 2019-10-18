@@ -3,7 +3,9 @@
     "packages/*"
   ],
   "version": "0.0.5",
-  "publishConfig": {
-    "registry": "http://www.pastme.top"
+  "command": {
+    "publish": {
+      "registry": "http://www.pastme.top:4873"
+    }
   }
 }
