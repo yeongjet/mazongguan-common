@@ -1,5 +1,5 @@
 {
-    "name": "@mazongguan-common/util",
+    "name": "@mazongguan-common/validator",
     "version": "0.0.17",
     "license": "ISC",
     "main": "lib/index.js",
@@ -8,6 +8,7 @@
         "build": "tsc"
     },
     "dependencies": {
+        "io-ts": "^2.0.1",
         "lodash": "^4.17.15",
         "rxjs": "^6.5.3"
     },
