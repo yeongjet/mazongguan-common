@@ -9,3 +9,4 @@ export const optional = <T extends t.Any>(
     t.OutputOf<T> | undefined,
     t.InputOf<T> | undefined
 > => t.union<[T, t.UndefinedType]>([type, t.undefined], name)
+
