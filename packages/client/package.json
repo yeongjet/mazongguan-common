@@ -12,7 +12,9 @@
         "test": "jest"
     },
     "dependencies": {
-        "ioredis": "^4.14.1"
+        "chalk": "^3.0.0",
+        "ioredis": "^4.14.1",
+        "@marblejs/core": "^2.3.1"
     },
     "devDependencies": {
         "@types/ioredis": "^4.0.19"

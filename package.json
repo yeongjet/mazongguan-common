@@ -4,35 +4,27 @@
   "description": "MaZongGuan common library",
   "main": "index.js",
   "scripts": {
-    "build": "lerna run build"
+    "build": "lerna run build",
+    "publish": "lerna run build && lerna publish"
   },
   "license": "ISC",
   "dependencies": {
     "@marblejs/core": "^2.3.1",
-    "@marblejs/middleware-body": "^2.3.1",
-    "@marblejs/middleware-io": "^2.3.1",
-    "@marblejs/middleware-logger": "^2.3.1",
-    "@types/jest": "^24.0.23",
-    "chalk": "^3.0.0",
     "lodash": "^4.17.15",
-    "pg": "^7.14.0",
-    "rxjs": "^6.5.3",
-    "typeorm": "^0.2.20",
-    "yaml": "^1.7.2"
+    "rxjs": "^6.5.3"
   },
   "devDependencies": {
     "@types/lodash": "^4.14.149",
     "@types/node": "^12.12.11",
     "@typescript-eslint/eslint-plugin": "^2.8.0",
     "@typescript-eslint/parser": "^2.8.0",
-    "cross-env": "^6.0.3",
+    "@types/jest": "^24.0.23",
     "eslint": "^6.6.0",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
     "lerna": "^3.19.0",
     "prettier": "^1.19.1",
     "typescript": "^3.7.2",
-    "@types/jest": "^24.0.23",
     "jest": "^24.9.0",
     "ts-jest": "^24.1.0"
   }
