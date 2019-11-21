@@ -1,0 +1,11 @@
+50 error Error: Command failed: git push --follow-tags --no-verify origin master
+50 error bash: /dev/tty: No such device or address
+50 error error: failed to execute prompt script (exit code 1)
+50 error bash: /dev/tty: No such device or address
+50 error error: failed to execute prompt script (exit code 1)
+50 error stty: 'standard input': Inappropriate ioctl for device
+50 error remote: Invalid username or password.
+50 error fatal: Authentication failed for 'https://github.com/yeongjet/mazongguan-common/'
+50 error
+50 error     at makeError (D:\project\mazongguan\mazongguan-common\node_modules\execa\index.js:174:9)
+50 error     at D:\project\mazongguan\mazongguan-common\node_modules\execa\index.js:278:16

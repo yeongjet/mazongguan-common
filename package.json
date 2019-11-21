@@ -12,24 +12,28 @@
     "@marblejs/middleware-body": "^2.3.1",
     "@marblejs/middleware-io": "^2.3.1",
     "@marblejs/middleware-logger": "^2.3.1",
-    "chalk": "^2.4.2",
+    "@types/jest": "^24.0.23",
+    "chalk": "^3.0.0",
     "lodash": "^4.17.15",
-    "pg": "^7.12.1",
+    "pg": "^7.14.0",
     "rxjs": "^6.5.3",
-    "typeorm": "^0.2.18",
-    "yaml": "^1.6.0"
+    "typeorm": "^0.2.20",
+    "yaml": "^1.7.2"
   },
   "devDependencies": {
-    "@types/lodash": "^4.14.138",
-    "@types/node": "^12.7.4",
-    "@typescript-eslint/eslint-plugin": "^2.4.0",
-    "@typescript-eslint/parser": "^2.4.0",
-    "cross-env": "^5.2.1",
-    "eslint": "^6.5.1",
-    "eslint-config-prettier": "^6.4.0",
+    "@types/lodash": "^4.14.149",
+    "@types/node": "^12.12.11",
+    "@typescript-eslint/eslint-plugin": "^2.8.0",
+    "@typescript-eslint/parser": "^2.8.0",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.6.0",
+    "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.1.1",
-    "lerna": "^3.15.0",
-    "prettier": "^1.18.2",
-    "typescript": "^3.6.4"
+    "lerna": "^3.19.0",
+    "prettier": "^1.19.1",
+    "typescript": "^3.7.2",
+    "@types/jest": "^24.0.23",
+    "jest": "^24.9.0",
+    "ts-jest": "^24.1.0"
   }
 }

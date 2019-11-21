@@ -1,6 +1,6 @@
 {
     "name": "@mazongguan-common/client",
-    "version": "0.0.22",
+    "version": "0.0.23",
     "license": "ISC",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
@@ -15,10 +15,6 @@
         "ioredis": "^4.14.1"
     },
     "devDependencies": {
-        "@types/ioredis": "^4.0.19",
-        "@types/jest": "^24.0.23",
-        "jest": "^24.9.0",
-        "ts-jest": "^24.1.0",
-        "typescript": "^3.7.2"
+        "@types/ioredis": "^4.0.19"
     }
 }
