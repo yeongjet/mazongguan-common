@@ -15,7 +15,6 @@ export class RedisClient extends Redis {
   static connect(config: Config) {
     if (this.instance) {
       this.instance.disconnect()
-      this.instance = null
     }
     this.instance = new RedisClient(config)
   }
