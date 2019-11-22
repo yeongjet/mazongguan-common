@@ -1,6 +1,5 @@
 import { createServer, Server } from 'http'
 import { createContext, httpListener } from '@marblejs/core'
-import chalk from 'chalk'
 
 interface ServerConfig {
     port: number
@@ -20,7 +19,8 @@ export class ServerClient extends Server {
 
     static async create({ middlewares, effects }: ServerConfig) {
         if (this.instance) {
-            await ServerClient.close()
+            // this.instance = null
+            // await ServerClient.close()
         }
         this.instance = new ServerClient(middlewares, effects)
     }
