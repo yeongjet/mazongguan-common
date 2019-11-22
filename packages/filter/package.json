@@ -1,6 +1,6 @@
 {
     "name": "@mazongguan-common/filter",
-    "version": "0.0.31",
+    "version": "0.0.32",
     "license": "ISC",
     "main": "lib/index.js",
     "typings": "lib/index.d.ts",
