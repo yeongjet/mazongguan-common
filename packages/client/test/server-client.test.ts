@@ -7,6 +7,6 @@ const config = {
 };
 
 test('should listen and close success', async () => {
-    await expect(ServerClient.listen(config)).resolves.toBeUndefined()
+    await expect(ServerClient.create(config)).resolves.toBeUndefined()
     await expect(ServerClient.close()).resolves.toBeUndefined()
 });

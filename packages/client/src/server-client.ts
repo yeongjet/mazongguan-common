@@ -18,28 +18,11 @@ export class ServerClient extends Server {
         )
     }
 
-    static listen({ port, middlewares, effects }: ServerConfig): Promise<void> {
-        return new Promise((resolve, reject) => {
-            if (this.instance) {
-                this.instance.close()
-            }
-            this.instance = new ServerClient(middlewares, effects)
-            this.instance
-                .listen(port, () => {
-                    console.info(
-                        chalk.green('[server] running'),
-                        `port:${port}`
-                    )
-                    resolve()
-                })
-                .on('close', () => {
-                    console.info(chalk.green('[server] stopped'))
-                })
-                .on('error', (error: Error) => {
-                    console.error(chalk.red('[server] errored'), error.message)
-                    reject()
-                })
-        })
+    static async create({ middlewares, effects }: ServerConfig) {
+        if (this.instance) {
+            await ServerClient.close()
+        }
+        this.instance = new ServerClient(middlewares, effects)
     }
 
     static close(): Promise<void> {
@@ -51,5 +34,9 @@ export class ServerClient extends Server {
                 resolve()
             })
         })
+    }
+
+    static getInstance(): ServerClient {
+        return this.instance
     }
 }

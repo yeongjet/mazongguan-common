@@ -13,7 +13,7 @@ export class RedisClient extends Redis {
         super(config)
     }
 
-    static connect(config: Config) {
+    static create(config: Config) {
         if (this.instance) {
             this.instance.disconnect()
         }
