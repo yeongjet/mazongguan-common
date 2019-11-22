@@ -18,12 +18,8 @@ export class ServerClient extends Server {
     }
 
     static async create({ middlewares, effects }: ServerConfig) {
-        if (this.instance) {
-            console.log('listening:')
-            console.log(this.instance.listening)
-            if(this.instance.listening){
-                await ServerClient.close()
-            }
+        if (this.instance?.listening) {
+            await ServerClient.close()
         }
         this.instance = new ServerClient(middlewares, effects)
     }
