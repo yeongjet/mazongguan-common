@@ -19,7 +19,7 @@ export class ServerClient extends Server {
 
     static async create({ middlewares, effects }: ServerConfig) {
         if (this.instance) {
-            // this.instance = null
+            this.instance = null
             // await ServerClient.close()
         }
         this.instance = new ServerClient(middlewares, effects)
