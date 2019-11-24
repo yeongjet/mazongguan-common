@@ -1,4 +1,4 @@
-import { RedisClient } from '../src';
+import { RedisClient } from '../lib';
 
 const config = {
     host: '192.168.1.161',
@@ -6,7 +6,7 @@ const config = {
 };
 
 beforeEach((done) => {
-    RedisClient.connect(config)
+    RedisClient.create(config)
     done()
 });
 
