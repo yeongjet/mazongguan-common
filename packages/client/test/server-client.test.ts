@@ -1,7 +1,6 @@
 import { ServerClient } from '../src';
 
 const config = {
-    port: 6379,
     middlewares: [],
     effects: []
 };

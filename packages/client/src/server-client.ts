@@ -1,27 +1,30 @@
 import { createServer, Server } from 'http'
-import { createContext, httpListener } from '@marblejs/core'
+import { createContext, httpListener, HttpListenerConfig } from '@marblejs/core'
 
 interface ServerConfig {
-    port: number
-    middlewares: any[]
-    effects: any[]
+    wechat: WechatConfig
 }
 
-export class ServerClient extends Server {
-    private static instance: ServerClient
+interface WechatConfig {
+    appid: string,
+    appSecret: string,
+    token: string,
+    encodingAESKey: string
+}
 
-    constructor(middlewares, effects) {
-        super()
-        return createServer(
-            httpListener({ middlewares, effects }).run(createContext())
-        )
-    }
+export class ServerClient {
+    private static instance: Server
+    public static config: ServerConfig
+    private constructor() {}
 
-    static async create({ middlewares, effects }: ServerConfig) {
+    static async create(listenerConfig: HttpListenerConfig, serverConfig?: ServerConfig) {
         if (this.instance?.listening) {
             await ServerClient.close()
         }
-        this.instance = new ServerClient(middlewares, effects)
+        this.instance = createServer(
+            httpListener(listenerConfig).run(createContext())
+        )
+        this.config = serverConfig
     }
 
     static close(): Promise<void> {
