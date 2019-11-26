@@ -1,0 +1,20 @@
+{
+    "name": "@mazongguan-common/validator",
+    "version": "0.0.35",
+    "license": "ISC",
+    "main": "lib/index.js",
+    "typings": "lib/index.d.ts",
+    "files": [
+        "lib/"
+    ],
+    "scripts": {
+        "build": "tsc"
+    },
+    "dependencies": {
+        "joi": "^14.3.1"
+    },
+    "gitHead": "4808a9db31ad821cae6c44713545351ecd2ab1a8",
+    "devDependencies": {
+        "@types/joi": "^14.3.4"
+    }
+}
