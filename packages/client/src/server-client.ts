@@ -2,10 +2,12 @@ import { createServer, Server } from 'http'
 import { createContext, httpListener, HttpListenerConfig } from '@marblejs/core'
 
 export interface ServerConfig {
-    wechat: WechatConfig
+    wechat: {
+        component: WechatComponentConfig
+    }
 }
 
-interface WechatConfig {
+interface WechatComponentConfig {
     appid: string,
     appSecret: string,
     token: string,
