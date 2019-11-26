@@ -11,10 +11,10 @@
         "build": "tsc"
     },
     "dependencies": {
-        "joi": "^14.3.1"
+        "@hapi/joi": "^16.1.8"
     },
     "gitHead": "4808a9db31ad821cae6c44713545351ecd2ab1a8",
     "devDependencies": {
-        "@types/joi": "^14.3.4"
+        "@types/hapi__joi": "^16.0.3"
     }
 }
